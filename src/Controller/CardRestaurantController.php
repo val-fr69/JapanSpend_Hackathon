@@ -12,4 +12,10 @@ class CardRestaurantController extends AbstractController
 
         return $this->twig->render('cards/cardRestaurant.html.twig');
     }
+
+    public function indexAct(): string
+    {
+
+        return $this->twig->render('cards/cardActivity.html.twig');
+    }
 }

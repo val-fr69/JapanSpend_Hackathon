@@ -37,19 +37,14 @@
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="tab-pane-picture" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-            {% include "cards/cardRestaurant.html.twig" %}
-        </div>
-        <div class="tab-pane fade" id="tab-pane-favorite" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
             {% include "cards/cardActivity.html.twig" %}
         </div>
-        <div class="tab-pane fade" id="tab-pane-follows" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        <div class="tab-pane fade" id="tab-pane-favorite" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
             {% include "cards/cardRestaurant.html.twig" %}
         </div>
-
-    
-    <div>
-        {% include "cards/cardRestaurant.html.twig" %}
-
+        <div class="tab-pane fade" id="tab-pane-follows" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            {% include "cards/cardActivity.html.twig" %}
+        </div>
     </div>
 {% block javascript %}<script src="/assets/js/script.js"></script>{% endblock %}
 {% endblock %}

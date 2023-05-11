@@ -5,7 +5,6 @@ namespace App\Controller;
 use App\Model\RestaurantManager;
 use App\Model\ActivityManager;
 
-
 class HomeController extends AbstractController
 {
     public function showRestaurant(): string
@@ -16,8 +15,10 @@ class HomeController extends AbstractController
         $activityManager = new ActivityManager();
         $activity = $activityManager->selectAll();
 
-        return $this->twig->render('Home/index.html.twig',
-         ['restaurants' => $restaurant,
-         'activities' => $activity]);
+        return $this->twig->render(
+            'Home/index.html.twig',
+            ['restaurants' => $restaurant,
+            'activities' => $activity]
+        );
     }
 }

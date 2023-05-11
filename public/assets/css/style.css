@@ -62,7 +62,7 @@
 
 .card {
     margin-bottom: 30px;
-    padding-top: 24px;
+    padding: 23px;
 }
 
 .card-img-top {
@@ -79,12 +79,11 @@
     font-size: 16px;
 }
 
-.cardRestaurant {
-    background-color: rgb(232, 202, 156);
-}
-
 .button {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
+}
+.container{
+    padding-top: 50px;
 }

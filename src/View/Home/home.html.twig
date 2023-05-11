@@ -1,0 +1,29 @@
+{% extends 'layout.html.twig' %}
+
+    {% block content %}
+        
+        <section class="header p-0 m-0 z-2 position-relative">
+            <div class="header-image h-100 w-100  d-flex justify-content-center align-items-center" >
+                <div class="dropdown-center">
+                    <button class="btn-dropdown dropdown-toggle border border-3 rounded-pill p-3 d-flex justify-content-center " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    SELECT A CITY 
+                    </button>
+                    <ul class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Aichi</a>
+                        <a class="dropdown-item" href="#">Chiba</a>
+                        <a class="dropdown-item" href="#">Hiroshima</a>
+                        <a class="dropdown-item" href="#">Hyogo</a>
+                        <a class="dropdown-item" href="#">Kanagawa</a>
+                        <a class="dropdown-item" href="#">Kyoto</a>
+                        <a class="dropdown-item" href="#">Nara</a>
+                        <a class="dropdown-item" href="#">Okinawa</a>
+                        <a class="dropdown-item" href="#">Osaka</a>
+                        <a class="dropdown-item" href="/tokyo">Tokyo</a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+
+        
+    {% endblock %}

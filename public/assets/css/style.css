@@ -1,6 +1,6 @@
 :root {
     /* fonts ------------*/
-    --font: ;
+
 
     /* colors -----------*/
 
@@ -26,6 +26,29 @@
     margin-left: 2em;
 }
 
+
+/* Homepage */
+
+.welcome {
+    color: var(--pink-color);
+    white-space: nowrap;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    animation: Scroll 5s linear infinite;
+    font-weight: bold;
+}
+
+@keyframes Scroll {
+    0% {
+        transform: translateX(-30%);
+    }
+
+    100% {
+        transform: translateX(30%);
+    }
+}
+
 /* Header */
 
 .header {
@@ -46,16 +69,6 @@
 
 .dropdown-menu {
     width: clamp(300px, 300px, 300px);
-}
-
-.header .dropdown-item {
-    color: var(--primary-color);
-
-}
-
-.header .dropdown-item:hover {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
 }
 
 /* Style personnalisé pour les cartes */
@@ -84,6 +97,7 @@
     justify-content: space-between;
     padding-top: 15px;
 }
-.container{
+
+.container {
     padding-top: 50px;
 }

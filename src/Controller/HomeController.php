@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\CityManager;
 use App\Model\RestaurantManager;
 use App\Model\ActivityManager;
 
@@ -20,5 +21,10 @@ class HomeController extends AbstractController
             ['restaurants' => $restaurant,
             'activities' => $activity]
         );
+    }
+
+    public function home(): string
+    {
+        return $this->twig->render('Home/home.html.twig');
     }
 }

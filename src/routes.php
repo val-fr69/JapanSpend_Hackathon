@@ -14,8 +14,6 @@ return [
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
 
-    'showcard' => ['CardRestaurantController', 'index',],
-    'showcard2' => ['CardRestaurantController', 'indexAct',],
 
 
 ];

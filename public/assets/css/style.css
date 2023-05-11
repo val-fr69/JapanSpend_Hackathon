@@ -1,5 +1,26 @@
-body {
-    color: #f76c6c;
+
+:root {
+    /* fonts ------------*/
+    --font: ;
+
+    /* colors -----------*/
+
+    --red-color: #B50D0D;
+    --pink-color: #B73842;
+    --grey-color: #383838;
+    --light-color: white;
+    --dark-color: black;
+
+}
+
+/* Navbar */
+
+.btn-reservation {
+    background-color: var(--light-color) !important;
+    color: var(--red-color) !important;
+    font-weight: bold !important;
+    border-color: var(--red-color) !important;
+    margin-right: 1.5em;
 }
 
 
@@ -28,3 +49,4 @@ body {
             padding-top: 15px;
         }
         
+

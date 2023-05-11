@@ -6,18 +6,24 @@
         <div class="header-image h-100 w-100  d-flex justify-content-center align-items-center" >
             <div class="dropdown ">
                 <button class="btn-dropdown dropdown-toggle border border-3 rounded-pill p-3 d-flex justify-content-center " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                SELECT A CITY 
+                SELECT A CITY
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    {% for city in citys %}
-                        <li><a class="dropdown-item" href="/city?id={{ city.id }}">{{ city.name }}</a></li>
-                    {% else %}
-                        <li>No city</li>
-                    {% endfor %}
+                    <a class="dropdown-item" href="#">Aichi</a>
+                    <a class="dropdown-item" href="#">Chiba</a>
+                    <a class="dropdown-item" href="#">Hiroshima</a>
+                    <a class="dropdown-item" href="#">Hyogo</a>
+                    <a class="dropdown-item" href="#">Kanagawa</a>
+                    <a class="dropdown-item" href="#">Kyoto</a>
+                    <a class="dropdown-item" href="#">Nara</a>
+                    <a class="dropdown-item" href="#">Okinawa</a>
+                    <a class="dropdown-item" href="#">Osaka</a>
+                    <a class="dropdown-item" href="#">Tokyo</a>
                 </ul>
             </div>
         </div>
     </section>
+    
     <div>
         {% include "cards/cardRestaurant.html.twig" %}
     </div>

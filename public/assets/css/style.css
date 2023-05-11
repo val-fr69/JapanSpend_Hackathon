@@ -48,15 +48,10 @@
     width: clamp(300px, 300px, 300px);
 }
 
-.header .dropdown-item {
-    color: var(--primary-color);
 
-}
 
-.header .dropdown-item:hover {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-}
+
+
 
 /* Style personnalisé pour les cartes */
 
@@ -79,9 +74,6 @@
     font-size: 16px;
 }
 
-.cardRestaurant {
-    background-color: rgb(232, 202, 156);
-}
 
 .button {
     display: flex;

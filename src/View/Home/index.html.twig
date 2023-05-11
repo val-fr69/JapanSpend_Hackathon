@@ -1,6 +1,7 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+        
     <section class="header p-0 m-0 z-2 position-relative">
         <div class="header-image h-100 w-100  d-flex justify-content-center align-items-center" >
             <div class="dropdown ">
@@ -17,4 +18,7 @@
             </div>
         </div>
     </section>
+    <div>
+        {% include "cards/cardRestaurant.html.twig" %}
+    </div>
 {% endblock %}

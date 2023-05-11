@@ -15,5 +15,7 @@ return [
     'items/delete' => ['ItemController', 'delete',],
 
     'showcard' => ['CardRestaurantController', 'index',],
+    'showcard2' => ['CardRestaurantController', 'indexAct',],
+
 
 ];

@@ -87,3 +87,6 @@
 .container{
     padding-top: 50px;
 }
+.cardRestaurant{
+    min-height: 200px;
+}

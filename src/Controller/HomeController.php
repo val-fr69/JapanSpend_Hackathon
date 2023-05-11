@@ -2,13 +2,15 @@
 
 namespace App\Controller;
 
+use App\Model\RestaurantManager;
+
 class HomeController extends AbstractController
 {
-    /**
-     * Display home page
-     */
-    public function index(): string
+    public function showRestaurant(): string
     {
-        return $this->twig->render('Home/index.html.twig');
+        $restaurantManager = new RestaurantManager();
+        $restaurant = $restaurantManager->selectAll();
+
+        return $this->twig->render('Home/index.html.twig', ['restaurants' => $restaurant]);
     }
 }

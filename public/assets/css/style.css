@@ -14,6 +14,10 @@
 
 /* Navbar */
 
+.navbar {
+    background-color: white;
+}
+
 .btn-reservation {
     background-color: var(--light-color) !important;
     color: var(--red-color) !important;
@@ -61,8 +65,6 @@
 .header .header-image {
     background-image: url('/assets/images/paysage.jpg');
     background-size: cover;
-    width: 100%;
-    height: 100%;
 }
 
 .btn-dropdown {
@@ -76,10 +78,12 @@
     width: clamp(300px, 300px, 300px);
 }
 
+/* Style personnalisé pour les cartes */
 
-/* Style personnalisé pour les cartes */ 
-
-
+.card {
+    margin-bottom: 30px;
+    padding: 23px;
+}
 
 .card-img-top {
     height: 250px;
@@ -89,4 +93,8 @@
 
 
 
- 
+}
+.cardRestaurant{
+    min-height: 200px;
+
+}

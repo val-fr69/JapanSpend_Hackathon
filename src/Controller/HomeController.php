@@ -2,13 +2,34 @@
 
 namespace App\Controller;
 
+use App\Model\TransportManager;
+use App\Model\RestaurantManager;
+use App\Model\ActivityManager;
+
 class HomeController extends AbstractController
 {
-    /**
-     * Display home page
-     */
     public function index(): string
     {
-        return $this->twig->render('Home/index.html.twig');
+        $restaurantManager = new RestaurantManager();
+        $restaurant = $restaurantManager->selectAll();
+
+        $activityManager = new ActivityManager();
+        $activity = $activityManager->selectAll();
+        
+        $transportManager = new transportManager();
+        $transport = $transportManager->selectAll();
+
+        return $this->twig->render(
+            'Home/index.html.twig',
+            ['restaurants' => $restaurant,
+            'activities' => $activity,
+            'transports' => $transport,
+            ]
+        );
+    }
+
+    public function home(): string
+    {
+        return $this->twig->render('Home/home.html.twig');
     }
 }

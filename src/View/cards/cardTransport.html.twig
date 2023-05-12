@@ -1,0 +1,23 @@
+<div class="container pt-5">
+	<div
+		class="row">
+		<!-- Carte de transport -->
+		{% for transport in transports %}
+			<div class="col-sm-6 col-md-4 d-flex align-items-stretch pb-3">
+				<div class="card h-100">
+					<img class="card-img-top" src="{{transport.url}}" alt="Image de restaurant 1">
+					<div class="card-body d-flex flex-column">
+						<h2 class="card-title mb-0">{{transport.moyenne}}</h2>
+						<p class="card-text">Price :
+							{{transport.price}}</p>
+						<div class="d-flex justify-content-between mt-auto">
+							<a href="#" class="btn btn-primary">En savoir plus</a>
+							<a class="btn btn-primary" data-price="{{transport.price}}" onclick="addToTotal(this.getAttribute('data-price'))">Reserver</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>

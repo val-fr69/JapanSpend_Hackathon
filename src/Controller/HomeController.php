@@ -18,8 +18,10 @@ class HomeController extends AbstractController
 
         return $this->twig->render(
             'Home/index.html.twig',
-            ['restaurants' => $restaurant,
-            'activities' => $activity]
+            [
+                'restaurants' => $restaurant,
+                'activities' => $activity
+            ]
         );
     }
 

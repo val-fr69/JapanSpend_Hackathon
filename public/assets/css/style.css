@@ -52,12 +52,17 @@
 /* Header */
 
 .header {
-    height: 300px;
+    height: 100vh; /* Utilise la hauteur totale de la fenêtre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header .header-image {
     background-image: url('/assets/images/paysage.jpg');
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .btn-dropdown {
@@ -71,12 +76,10 @@
     width: clamp(300px, 300px, 300px);
 }
 
-/* Style personnalisé pour les cartes */
 
-.card {
-    margin-bottom: 30px;
-    padding: 23px;
-}
+/* Style personnalisé pour les cartes */ 
+
+
 
 .card-img-top {
     height: 250px;
@@ -84,25 +87,6 @@
     width: 100%;
 }
 
-.card-title {
-    margin-bottom: 0;
-}
 
-.card-text {
-    font-size: 16px;
-}
 
-.button {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
-}
-
-.container {
-    padding-top: 50px;
-
-}
-.cardRestaurant{
-    min-height: 200px;
-
-}
+ 
